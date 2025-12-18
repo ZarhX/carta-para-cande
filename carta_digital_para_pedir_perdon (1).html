@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para vos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#efe6ff,#f7f0ff);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:#2f2533;
+    }
+    .card{
+      width:min(92vw,560px);
+      background:#f6f0ff;
+      border-radius:24px;
+      padding:40px 34px 38px;
+      box-shadow:0 30px 60px rgba(120,90,160,.25);
+      position:relative;
+      overflow:hidden;
+      border:2px solid #d6c4ff;
+      animation:fadeUp .9s ease forwards;
+    }
+    .card::before{
+      content:"❤";
+      position:absolute;
+      top:14px;
+      left:18px;
+      font-size:22px;
+      color:#a78bfa;
+      animation:heartbeat 5.5s ease-in-out infinite;
+    }
+    .card::after{
+      content:"❤";
+      position:absolute;
+      top:14px;
+      right:18px;
+      font-size:22px;
+      color:#a78bfa;
+      animation:heartbeat 5.5s ease-in-out infinite;
+    }
+    .card::after{
+      content:"❤";
+      position:absolute;
+      top:14px;
+      right:18px;
+      font-size:22px;
+      color:#a78bfa;
+      animation:pulse 2.8s ease-in-out infinite;
+    }
+    .card::before{
+      content:"❤";
+      position:absolute;
+      top:14px;
+      left:18px;
+      font-size:22px;
+      opacity:.4;
+    }
+    .card::after{
+      content:"❤";
+      position:absolute;
+      bottom:14px;
+      right:18px;
+      font-size:22px;
+      opacity:.4;
+    }
+    .hearts{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+    }
+    .flowers{
+      position:absolute;
+      bottom:12px;
+      left:0;
+      width:100%;
+      text-align:center;
+      font-size:22px;
+      opacity:.35;
+    }
+    h1{
+      font-family:"Playfair Display",serif;
+      font-weight:600;
+      text-align:center;
+      margin:6px 0 22px;
+      font-size:34px;
+      color:#5b3a8a;
+    }
+    p{
+      line-height:1.7;
+      font-size:16px;
+      margin:0 0 15px;
+    }
+    .divider{
+      height:1px;
+      background:linear-gradient(90deg,transparent,#f4b6c2,transparent);
+      margin:20px 0 22px;
+    }
+    .signature{
+      margin-top:26px;
+      text-align:right;
+      font-family:"Playfair Display",serif;
+      font-size:18px;
+      color:#7a2e3a;
+    }
+    .footer{
+      margin-top:16px;
+      text-align:center;
+      font-size:12px;
+      opacity:.6;
+    }
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(18px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    @keyframes heartbeat{
+      0%,100%{transform:scale(1);opacity:.4}
+      50%{transform:scale(1.15);opacity:.8}
+    }
+      50%{transform:scale(1.25);opacity:.9}
+    }
+      to{opacity:1;transform:translateY(0)}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="flowers">🌿💜🌿💜🌿</div>
+    <h1>Perdón</h1>
+    <p>Ahora que me siento con un poco más de ánimo, quiero intentar arreglar las cosas y decirte esto con total sinceridad.</p>
+    <p>Sos una persona muy importante para mí y no quiero dejarte ir. Te quiero muchísimo y lo que compartimos significó mucho para mí. Hablar con vos me hacía bien, me daba calma y me ayudaba incluso en momentos personales difíciles. Me importaba verte bien y sentir que entre nosotros estaba todo en paz. Antes de aquella noche, el ambiente era distinto y yo lo valoro mucho.</p>
+    <p>Sé que lo que pasó fue mi responsabilidad. No voy a buscar excusas ni justificarme. Entiendo que mis palabras y acciones estuvieron mal y pudieron haberte lastimado. Por eso quiero decirte, con total claridad, que estoy verdaderamente arrepentido.</p>
+    <p>No te escribo para presionarte ni para que hagas algo que no sientas. Te escribo porque aprendí de lo que pasó y porque quiero hacer las cosas bien. Reconozco mi error y estoy dispuesto a cambiar actitudes y cuidar más lo que digo y hago.</p>
+    <p>Quizás insista, y entiendo que puede resultar molesto, pero lo hago porque me importás de verdad y porque no quiero quedarme con el arrepentimiento de no haber intentado. Prefiero ser honesto ahora antes que lamentarlo después.</p>
+    <p>No busco que me expliques nada, ni que me pidas disculpas, ni que me perdones de inmediato. Solo me gustaría saber si existe la posibilidad de volver a hablar con tranquilidad, desde cero, sin reproches y con más cuidado.</p>
+    <p>Prometo respetarte, escucharte y no volver a decir cosas que te incomoden. Mi intención es simple: recuperar el diálogo y hacer las cosas bien esta vez.</p>
+    <p>Todo esto lo digo con sinceridad. Estoy arrepentido y con ganas reales de mejorar.</p>
+    <div class="signature">— Ezequiel</div>
+    <div class="footer">Hecho con cariño</div>
+  </div>
+</body>
+</html>
