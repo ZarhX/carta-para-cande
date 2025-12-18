@@ -1,2 +1,0 @@
-# carta-para-cande
-perdon
